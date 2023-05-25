@@ -1,6 +1,7 @@
 import bpy
 import math
 import os
+import argparse
 
 '''
 1. Generate images from .obj files
@@ -52,8 +53,11 @@ def rotate_and_render(output_dir, output_file_pattern_string = 'render%d.jpg', r
     subject.rotation_euler = original_rotation
 
 def main():
-    read_file("resources/gripper.blend")
-
+    parser = argparse.ArgumentParser(description = "Generate images from .obj files")
+    parser.add_argument("obj_file", help = "Path to the .obj file to generate images from")
+    args = parser.parse_args()
+    
+    read_file(args.obj_file)
     for mesh_object in get_all_mesh_objects():
         rotate_and_render('resources/training_data', mesh_object.name + '_render_%d.jpg', 10, 360.0, mesh_object)
 
