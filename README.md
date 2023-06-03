@@ -6,7 +6,7 @@ This project is a collection of scripts that aims to automate the training of an
 
 ### create_parts_graph (wip)
 
-This part hasn't been completed yet. The project is a small part of a larger project that aims to automate the development of a disassembly ontology through CAD files. The idea for this module / script is to take in a list of components in a CAD assembly which have been identified as either a fastener or a component and then generate a graph of the assembly with each component as a node. This can then be used to generate a disassembly sequence.
+This part hasn't been completed yet. The project is a small part of a larger project that aims to automate the development of a disassembly ontology through CAD files. The idea for this module / script is to take in a list of components in a CAD assembly which have been identified as either a fastener or a part and then generate a graph of the assembly with each component as a node. This can then be used to generate a disassembly sequence.
 
 ### disassemble_model
 
@@ -18,7 +18,7 @@ For future development, it may also be nice to have functionality to create a `c
 
 ### generate_classification_model (wip)
 
-This script takes in a folder of images and trains an Image Classification model based off ResNet50.
+This script takes in a folder of images and trains an Image Classification model based off ResNet50. Note that this model isn't currently finished.
 
 Note that currently we don't have enough training data to develop a good model.
 
@@ -34,7 +34,7 @@ Note that currently we don't have enough training data to create a good model so
 
 ### resources
 
-This folder contains all the resources used by the scripts. This includes the CAD components, the Image Classification model, and the training data.Built Environment Staff & Students
+This folder contains all the resources used by the scripts. This includes the CAD components, the Image Classification model, and the training data.
 
 ## Installation Requirements
 
