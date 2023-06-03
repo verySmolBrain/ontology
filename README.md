@@ -10,7 +10,9 @@ This part hasn't been completed yet. The project is a small part of a larger pro
 
 ### disassemble_model
 
-This script takes in a CAD assembly and outputs each individual component as a separate file. This can be specified as either a fastener or a component which is then saved in the respective folder under `resources/models/`.
+This script takes in a CAD assembly and outputs each individual component as a separate file. This can be specified as either a fastener or a component which is then saved in the respective folder under `resources/models/`. This design decision is because we want to create a good sample of different
+fasteners and parts. Simply generating images would reduce the flexibility of being able to combine different parts or test the model with specific
+parts.
 
 For future development, it may also be nice to have functionality to create a `component.json` file which contains metadata on each component which can then be used to develop the ontoloy further.
 
