@@ -1,12 +1,14 @@
 ## Project Descriptions
 
-This project is a collection of scripts that aims to automate the training of an Image Classification model for the purpose of classifying each CAD component as either a fastener or part. The scripts are written in Python and use the Blender API to generate images of CAD components in various orientations and lighting conditions. The images are then stored as training data for an Image Classification model developed through Transfer Learning and based off the ResNet50 model.
+This project is a collection of scripts that aims to automate the training of an Image Classification model for the purpose of classifying each CAD component as either a fastener or part. The scripts are written in Python and use the Blender API to generate images of CAD components in various orientations and lighting conditions. The images are then stored as training data for an Image Classification model developed through Transfer Learning and based off the ResNet50 model. 
+
+The project is a small part of a larger project that aims to automate the development of a disassembly ontology through CAD files.
 
 ## Project Structure
 
 ### create_parts_graph (wip)
 
-This part hasn't been completed yet. The project is a small part of a larger project that aims to automate the development of a disassembly ontology through CAD files. The idea for this module / script is to take in a list of components in a CAD assembly which have been identified as either a fastener or a part and then generate a graph of the assembly with each component as a node. This can then be used to generate a disassembly sequence.
+This part hasn't been completed yet. The idea for this module / script is to take in a list of components in a CAD assembly which have been identified as either a fastener or a part and then generate a graph of the assembly with each component as a node. This can then be used to generate a disassembly sequencem that can be fed into a disassembly ontology alongside part metadata.
 
 ### disassemble_model
 
