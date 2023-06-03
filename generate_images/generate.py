@@ -10,7 +10,7 @@ import argparse
 '''
 
 def read_file(filepath):
-    bpy.ops.wm.open_mainfile(filepath = "resources/models/screw.blend")
+    bpy.ops.wm.open_mainfile(filepath)
 
 def get_all_mesh_objects():
     return [o for o in bpy.context.scene.objects if o.type == 'MESH']

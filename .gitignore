@@ -1,3 +1,5 @@
 ontology_env
 runs
 yolov8l-seg.pt
+resources/models/*
+resources/training_data/*
